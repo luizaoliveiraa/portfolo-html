@@ -1,0 +1,252 @@
+@font-face {
+  font-family: "Manjari";
+  src: url("fonts/Manjari-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("fonts/NunitoSans-Regular.ttf");
+}
+
+:root {
+  --titlefont: "Manjari";
+  --bodyfont: "Nunito";
+  --textcolor: #eaeaea;
+  --purplecolor: #935fd9;
+  --bluecolor: #2ad8f6;
+  --bgcolor: #0f1a27;
+  --lineheight: 1.5;
+}
+
+body {
+  background-color: var(--bgcolor);
+  font-family: var(--bodyfont);
+}
+
+header {
+  display: flex;
+  position: absolute;
+  z-index: 10;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  top: 0;
+  background-color: var(--bgcolor);
+}
+
+.ext-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding-right: 100px;
+  gap: 50px;
+}
+
+.list-links {
+  text-decoration: none;
+  color: var(--textcolor);
+  font-size: large;
+}
+
+h1 {
+  font-family: var(--titlefont);
+  font-size: 180px;
+  color: var(--purplecolor);
+  -webkit-text-stroke: 8px;
+  letter-spacing: 5px;
+} /*Webkit stroke para deixar a letra mais redonda, o weight não funcionou nesse caso*/
+
+h2 {
+  margin: 0;
+}
+h3 {
+  text-transform: uppercase;
+  color: var(--bluecolor);
+  text-align: center;
+  margin-top: 60px;
+}
+h4 {
+  color: var(--textcolor);
+  font-size: x-large;
+}
+
+p {
+  color: var(--textcolor);
+}
+
+.homepage {
+  display: flex;
+  height: 800px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.me {
+  align-items: center;
+  display: flex;
+  width: 50%;
+}
+
+.port1 {
+  position: relative;
+  left: 80px;
+}
+.port2 {
+  position: relative;
+  left: 80px;
+}
+.port3 {
+  position: relative;
+  top: 150px;
+  right: 180px;
+  font-size: 150px;
+  letter-spacing: 2px;
+}
+.profile {
+  position: relative;
+  left: 80px;
+  bottom: 50px;
+}
+/*position relative para conseguir movimentar exatamente onde queria*/
+
+#gif2 {
+  width: 50px;
+  position: relative;
+  top: 80px;
+  right: 700px;
+}
+#gif1 {
+  width: 80px;
+  position: relative;
+  bottom: 140px;
+  right: 380px;
+}
+.intro {
+  font-size: larger;
+  width: 50%;
+  margin-top: 280px;
+  font-size: x-large;
+  padding: 20px;
+}
+.name {
+  background-image: linear-gradient(to right, #dd24fb, #2ad8f6);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--textcolor);
+}
+/*transformei o linear-gradiente em imagem e recortei o texto > para colocar gradiente em letras*/
+
+.who {
+  text-transform: uppercase;
+  font-size: smaller;
+  margin-bottom: 0px;
+}
+
+.about {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+  display: flex;
+  justify-content: center;
+}
+.education {
+  width: 50%;
+  display: flex;
+  margin: 15px 0 0 40px;
+}
+
+.tech {
+  font-size: smaller;
+  font-weight: bold;
+  margin: 60px auto;
+}
+
+.experience {
+  width: 47%;
+  margin: 0 40px 0 35px;
+}
+
+.description {
+  font-size: smaller;
+}
+
+.arrowopen {
+  position: relative;
+  margin: 0;
+  top: 10px;
+  width: 30px;
+}
+
+.cv-btn {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 80px;
+}
+
+#projects {
+  height: 650px;
+}
+td a {
+  text-decoration: none;
+  color: var(--textcolor);
+}
+.myprojects {
+  display: flex;
+  color: var(--textcolor);
+  justify-content: center;
+  text-align: center;
+  line-height: 25px;
+  margin-top: 60px;
+}
+
+#contact {
+  text-align: center;
+  margin: 50px;
+}
+
+.linkedin a {
+  color: var(--textcolor);
+}
+
+.ctt-btn {
+  margin: 20px auto;
+}
+
+span {
+  font-weight: bold;
+}
+
+.vr {
+  height: 650px;
+  width: 1px;
+  border: 0;
+  background: linear-gradient(to bottom, #dd24fb, #2ad8f6);
+}
+
+.hr {
+  width: 90%;
+  border: 0;
+  background: linear-gradient(to right, #dd24fb, #2ad8f6);
+  height: 0.5px;
+}
+/*linhas horizontais - dependendo de onde eu colocava, elas sumiam no meu computador.. mesmo mudando o height das seções. Optei por deixar no início de cada sessão, pois assim no meu computador apareciam, indendente do zoom*/
+footer {
+  font-size: small;
+  margin: 10px;
+}

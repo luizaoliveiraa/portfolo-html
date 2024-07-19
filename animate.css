@@ -1,0 +1,152 @@
+/*Separei a estilização das animações e hover em diferentes ficheiros para ficar menos confuso*/
+
+.navbar .list-links:hover {
+  color: var(--purplecolor);
+  font-weight: bold;
+  transition: all 300ms;
+  scale: 1.2;
+}
+.git-btn:hover {
+  -webkit-filter: invert(80%);
+  filter: invert (80%);
+  transition: 0.3s;
+}
+
+.lkd-btn:hover {
+  -webkit-filter: invert(70%);
+  filter: invert (70%);
+  transition: 0.3s;
+}
+
+button {
+  border-radius: 70px;
+  border: none;
+  background: linear-gradient(to right, #dd24fb, #2ad8f6);
+  width: 160px;
+  height: 50px;
+  font-family: var(--bodyfont);
+  color: var(--textcolor);
+  font-size: medium;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: transparent;
+  color: var(--textcolor);
+  box-shadow: inset 0 0 0 2px #2ad8f6;
+  font-weight: bold;
+  transition: all 500ms;
+}
+#downarrow {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.arrow {
+  height: 15px;
+  width: 15px;
+  border-bottom: 1px solid var(--textcolor);
+  border-right: 1px solid var(--textcolor);
+  rotate: 45deg;
+  animation: move 800ms infinite;
+  margin: 0;
+}
+.arrow:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.arrow:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+@keyframes move {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.xp1 {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.description1 {
+  display: none;
+}
+.xp1:hover + .description1 {
+  display: block;
+}
+.xp2 {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.description2 {
+  display: none;
+}
+.xp2:hover + .description2 {
+  display: block;
+}
+.xp3 {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.description3 {
+  display: none;
+}
+.xp3:hover + .description3 {
+  display: block;
+}
+.xp4 {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.description4 {
+  display: none;
+}
+.xp4:hover + .description4 {
+  display: block;
+}
+.xp5 {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.description5 {
+  display: none;
+}
+.xp5:hover + .description5 {
+  display: block;
+}
+.xp6 {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.description6 {
+  display: none;
+}
+.xp6:hover + .description6 {
+  display: block;
+}
+/*não consegui fazer de outra forma para ficar mais suave a transição, tentei com visibility e opacity mas mantinha não escondia o espaço escondido.. optei por deixar dessa forma pois não queria os textos aparecendo*/
